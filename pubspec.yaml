@@ -1,6 +1,6 @@
 name: scroll_velocity_listener
 description: A widget that wraps scroll views and outputs velocity
-version: 0.0.6
+version: 0.0.7
 homepage: https://github.com/pstromberg98/scroll_velocity_listener
 
 environment:
