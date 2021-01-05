@@ -24,7 +24,7 @@ class _ScrollVelocityListenerState extends State<ScrollVelocityListener> {
       onNotification: (notification) {
         final now = DateTime.now();
         final timeDiff = now.millisecondsSinceEpoch - lastMilli;
-        if (notification is ScrollUpdateNotification && timeDiff >= 15) {
+        if (notification is ScrollUpdateNotification) {
           final pixelsPerMilli = notification.scrollDelta / timeDiff;
           widget.onVelocity(
             pixelsPerMilli,
